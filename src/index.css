@@ -1,0 +1,32 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #ffffff;
+  color: #333333;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Offset for fixed navbar */
+section[id], footer[id] {
+  scroll-margin-top: 56px;
+}
+
+/* Bootstrap form overrides */
+.navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* Remove default App.css styles if any */
+#root {
+  width: 100%;
+}
